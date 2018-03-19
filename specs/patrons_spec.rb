@@ -31,9 +31,4 @@ class PatronTest < MiniTest::Test
     assert_equal(1997, @patron1.wallet)
   end
 
-  def test_bar_stock_decreases
-    @patron1.buy_a_drink(@bar1, @drink3)
-    assert_equal(2, @bar1.drinks_stock.length)
-  end
-
 end

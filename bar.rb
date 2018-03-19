@@ -17,4 +17,5 @@ class Bar
   def receive_money(drink_amount)
     @till += drink_amount
   end
+  
 end
