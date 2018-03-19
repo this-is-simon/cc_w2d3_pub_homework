@@ -33,6 +33,11 @@ class BarTest < MiniTest::Test
     assert_equal(actual_result, expected_result)
   end
 
+  def test_receive_money
+    @bar1.receive_money(5)
+    assert_equal(505, @bar1.till)
+  end
+
   # def test_pub_can_serve_drink
   #   @pub.serve(@customer, @drink1)
   #   assert_equal(8.0, @customer.wallet())

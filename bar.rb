@@ -14,11 +14,7 @@ class Bar
     return @drinks_stock
   end
 
-  def serve(customer, drink)
-   if @drinks.include?(drink)
-     customer.buy(drink)
-     @till += drink.price()
-   end
- end
-
+  def receive_money(drink_amount)
+    @till += drink_amount
+  end
 end
